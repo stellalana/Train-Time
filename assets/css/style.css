@@ -1,0 +1,46 @@
+.jumbotron {
+    display: flex;
+    background: gray;
+    background-image: url("../images/train.jpg");
+    background-position: center;
+    background-size: 110%;
+    color: rgb(171,215,247);
+    min-height: 300px;
+    text-align: center;
+    justify-content: center;
+}
+h1 { 
+    padding-top: 30px;
+    font-size: 100px;
+}
+#trSched th {
+    height: 50px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(153, 60, 50);
+    color: white;
+    text-align: center;
+}
+#trSched {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#trSched td,
+#trSched th {
+    border: 1px solid rgb(171,215,247);
+    padding: 10px;
+}
+#trSched tr:nth-child(even) {
+    background-color: rgb(228, 238, 245);
+}
+#trSched tr:hover {
+    background-color: rgb(171,215,247);
+}
+.center {
+    text-align: center;
+}
+#form {
+    margin-top: 30px;
+}

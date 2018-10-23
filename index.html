@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Train Time</title>
+    <!-- Links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Container -->
+    <div class="container">
+        <!-- Jumbo -->
+        <div class="jumbotron">
+            <h1>Train Time!</h1>
+        </div> 
+        <!-- Jumbo End -->
+        <div>
+            <!-- Table -->
+            <div>
+                <table id="trSched">
+                    <tr>
+                        <th>Train Name</th>
+                        <th>Destination</th>
+                        <th>Frequency (min)</th>
+                        <th>Next Arrival</th>
+                        <th>Minutes Away</th>
+                    </tr>
+                </table>
+            </div>
+            <!-- Table End -->
+        </div>
+        <!-- Table Div End -->
+        <!-- Form -->
+        <div id="form">
+            <div><h3>Add Train</h3></div>
+            <div>
+                <form>
+                    <div class="form-group">
+                    <label for="nameInput">Train Name</label>
+                    <input type="text" class="form-control mb-3" id="nameInput" aria-describedby="TrainFormHelp" placeholder="Red Line" required>
+                    <label for="destinationInput">Destination</label>
+                    <input type="text" class="form-control mb-3" id="destinationInput" placeholder="New York, NY" required>
+                    <label for="firstTrainInput">First Train Time</label>
+                    <input type="text" class="form-control mb-3" id="firstTrainInput" placeholder="HH:mm - Military Time" required>
+                    <label for="frequencyInput">Frequency (min)</label>
+                    <input type="number" class="form-control mb-3" id="frequencyInput" placeholder="30">
+                    <button id="addT" type="submit" class="btn btn-secondary">Submit</button>
+                </div>
+                </form>
+            </div>
+        </div>
+
+    <!--Scripts-->
+    <script src="assets/javascript/app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+</body>
+
+</html>
